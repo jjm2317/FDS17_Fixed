@@ -9,8 +9,15 @@
 html{
   font-size: 10px;
 }
+.clearfix{
+  content:"";
+  display:block;
+  clear:both;
+}
 .header, .visual, .main, .slogan, .footer{
   width: 940px;
+  margin-left: auto;
+  margin-right: auto;
   
 }
 .header{
@@ -44,10 +51,9 @@ a{
 /* 레이아웃 */
 .container{
   /* background-color: #ccc; */
-  display: flex;
+  /* display: flex;
   flex-flow: column nowrap; 
-  justify-content: space;
-  align-items: center;
+  align-items: center; */
 }
 /* 메인 메뉴 */
 .menu{
@@ -234,20 +240,21 @@ a{
   width: 500px;
 }
 .main{
-  background-color: blue;
+  background-color: #Fff;
   min-height: 450px;
   padding: 30px;
   display: flex;
   flex-flow: row nowrap; 
   justify-content: space-between;
   align-items: flex-start;
+  border-radius:15px 15px 0 0;
   
 }
 /* 헤더 */
 .header{
   background: #fff;
   border-radius: 0 0 15px 15px;
-  padding: 0 30px 0 30px;
+  padding: 1px 30px ;
   position: relative;
   
   /* display: flex; */
@@ -289,16 +296,13 @@ a{
 
 /* 메인 콘텐츠 */
 .group1{
-  background-color: pink;
   width: 250px; 
   
 }
 .group2{
-  background-color: lightgreen;
   width: 380px;
 }
 .group3{
-  background-color: coral;
   width: 190px;
 }
 /* 로그인 */
@@ -431,11 +435,10 @@ a{
 }
 /* 유효성 검사 배너 링크 */
 .validation-list{
-  background-color: yellow;
-  list-style:none;
   margin-top: 25px;
   margin-bottom:0;
   padding-left:0;
+  list-style:none;
 }
 .validation-list a{
   display:block;
@@ -465,6 +468,61 @@ a{
   height:15px;
   
 } */
+
+/* 웹 관련 용어 */
+.term{
+  
+  background:#ccc linear-gradient(180deg, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+  
+}
+.term-heading{
+  margin:0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.term-list{
+  margin-top:10px;
+  margin-bottom: 0;
+}
+.term-list > div{
+  margin-top: 10px;
+  /* position:relative; */
+  /* padding:0;
+  margin:0; */
+}
+.term-list>div::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.term-list-subject, .term-list-brief{
+  width: 145px;
+  float:right;
+}
+.term-list-subject{
+  color:#296897;
+}
+.term-list-thumbnail{
+  margin-left:0;
+  float: left;
+}
+
+.term-list-brief{
+  margin-left: 0;
+  margin-top:10px;
+  font-size:14px;
+}
+.even .term-list-subject,
+.even .term-list-brief{
+  float:left;
+}
+.even .term-list-thumbnail{
+  float:right;
+}
 /* 슬로건 */
 .slogan{
   background-color: orange;
