@@ -580,19 +580,170 @@ a{
   justify-items: center;
 }
 /* 공지 자료실 */
-.board{
+/* .board{
   position:relative;
 }
-.notice{
-  position:absolute;
-  top:0;
-  left:0;
+.pds-heading{
+  position: absolute;
+  margin-top:0;
+  top:0px;
+  left: 70px;
 }
-.pds{
-  position:absolute;
-  top:0;
-  left:0;
+.notice-heading ,.pds-heading {
+  font-weight:normal;
+  font-size:1em;
+  width: 70px;
+  text-align: center; */
+  /* margin-top: 20px;
+  color:#444;
 }
+.notice-heading a,.pds-heading a{
+  display:inline-block;
+  border:1px solid #aaa;
+  width: 70px;
+  border-radius: 5px 5px 0 0;
+  
+  line-height:30px;
+}
+
+.tab-act .tab{
+  border-color: #f00;
+  color: #f00;
+  border-bottom:none;
+  
+}
+.notice-list, .pds-list {
+  list-style:none;
+}
+.notice-more,.pds-more{
+  position:absolute;
+  top:5px;
+  right:0;
+}
+.pds-list, .pds-more{
+  display:none;
+}
+.notice-list,.notice-more{
+  display:none;
+}
+.pds-list{
+  padding:0;
+}
+.pds-list li, .notice-list li{
+  padding-top:7px;
+  padding-bottom: 7px;;
+}
+.pds-list li a::before, .notice-list li a::before{
+  content:"\f192";
+  font-family: 'fontello';
+  font-weight: normal;
+ 
+  width: 1em;
+  margin-right: .2em;
+}
+
+.notice-list li a,.pds-list li a{
+  display:inline-block;
+  width:300px;
+  text-overflow:ellipsis;
+}
+.icon-plus::before{
+  color:green; */
+/* } */
+/* 공지사항 및 자료실 */
+.board{
+  background-color: yellow;
+  margin-top:20px;
+  position: relative;
+  min-height:180px;
+}
+.notice-heading,.pds-heading{
+  background-color: pink;
+  float:left;
+  margin:0;
+  font-size:1.4rem;
+  font-weight: 400;
+}
+.tab{
+  display:block;
+  color:#666;
+  border:1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
+}
+
+.tab-act .tab{
+  color :#db5629;
+  border-color: #db5629 #db5629 #fff #db5629;
+  background: #fff;
+}
+.notice-list, .pds-list, .notice-more, .pds-more{
+  display:none;
+}
+.tab-act .notice-list,
+.tab-act .pds-list,
+.tab-act .notice-more,
+.tab-act .pds-more{
+  display:block;
+}
+.notice-list,.pds-list{
+  background-color: silver;
+  list-style: none;
+  margin:0;
+  padding-left: 0;
+  position: absolute;
+  top:45px;
+  left:0;
+  width: 100%;
+}
+.notice-list li, .pds-list li{
+  background-color: orange;
+  margin-bottom: 10px;
+}
+.notice-list a, .pds-list a{
+  background-color: skyblue;
+  float:left;
+  width: 300px;
+  white-space: nowrap;
+  overflow:hidden ;
+  text-overflow: ellipsis;
+}
+.notice-list a::before,
+.pds-list a::before{
+  content:'\f192';
+  font-family: 'fontello';
+  font-weight: normal;
+  speak: none;
+  
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+}
+.notice-list li::after, .pds-list li::after{
+  content:"";
+  display: block;
+  clear: both;
+}
+.notice-list time, .pds-list time{
+  background-color: violet;
+  float:right;
+}
+.pds-list{
+  background-color: orange;
+}
+.notice-more,.pds-more{
+  position:absolute;
+  top:-8px;
+  right:-8px;
+  padding:8px;
+}
+.icon-plus::before{
+  color:hsla(110, 30%, 50%,1)
+}
+
 /* 슬로건 */
 .slogan{
   background-color: orange;
