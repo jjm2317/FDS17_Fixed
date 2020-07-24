@@ -860,15 +860,17 @@ a{
 .btn-next{
   background-position: -35px 0;
 } */
-.event{
-  position: relative;
-}
-.evetn-heading{
+.event-heading, .related-heading {
   font-size: 1.6rem;
   margin: 0;
 }
-.event-heading span{
+.event-heading span, .related-heading span{
   color: #db5629;
+}
+
+.event{
+  position: relative;
+  border-bottom: 2px solid #aaa;
 }
 .event-thumbnail,.event-brief{
   margin: 10px 0;        
@@ -901,6 +903,35 @@ a{
 .btn-next{
   background-position: -35px 0;
 }
+/* 관련 사이트 */
+.related{
+  margin-top: 10px;
+}
+.related-list{
+  background-color: #fff;
+  list-style: none;
+  padding-left:0;
+  margin: 10px 0 0 0;
+  height: 27px;
+  border: 1px solid #aaa;
+  overflow:hidden;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  transition: all 200ms;
+}
+.related-list:hover{
+  height: 147px;
+  padding: 10px 0;
+}
+.related-list li{
+  padding: 2px;
+}
+.related-list a{
+  display: block;
+  line-height: 21px;
+  text-indent: 1em;
+}
+
 /* 슬로건 */
 
 .slogan{
