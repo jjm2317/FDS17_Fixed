@@ -939,7 +939,6 @@ a{
   position: relative;
 }
 .favorite-list{
-  background-color: yellow;
   margin: 10px 0 0 0;
   list-style:none;
   padding-left:0;
@@ -968,13 +967,11 @@ a{
   font-size: 1.3rem;
 }
 .favorite-list a{
-  background-color: lime;
   /* display: isnline-block; */
   flex-grow:1;
 }
 .up, .down, .stop{
   /* display:inline-block; */
-  background-color: pink;
   background-image: url(./images/rank.png);
   background-repeat: no-repeat;
   font-style: normal;
@@ -1051,15 +1048,59 @@ a{
   content: "";
 }
 .footer-bg{
-  background-color:purple;
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
   width:100%;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .footer{
-  background-color:skyblue;
+  /* background-color:skyblue; */
+  position: relative;
+  padding: 0px 100px 0px 170px;
 }
-
-
+/* 푸터 로고 */
+.footer-logo{
+  position: absolute;
+  top:35px;
+  left: 35px;
+}
+/* 가이드 링크 */
+.guide-list{
+  margin: 0;
+  padding:4px 20px;
+  list-style: none;
+  background-color: #7b8385;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-radius:5px;
+  color:#fff;
+}
+.guide-list a{
+  display:block;
+  padding: 6px 15px;
+  text-transform: uppercase;
+}
+/* 주소 및 연락처 */
+.address{
+  font-style: normal;
+  margin: 10px 0 5px 0;
+}
+.address span{
+  margin-right: 10px;
+}
+/* 저작권 */
+.copyright{
+  font-size: 1.4rem;
+  display:block;
+}
+/* 적용 기술 배지 */
+.badge{
+  position: absolute;
+  top:0px;
+  right:0;
+}
 
